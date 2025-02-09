@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*mengimpor font dari google*/
+
+body{
+    font-family: "Montserrat", sans-serif;/*mengatur seluruh font ke semua halaman*/
+    background-color: black;/*mengatur warna latar belakang */
+    color: white;/*mengatur warna teks menjadi putih*/
+}
+.navbar{
+    display: flex;/*menjadikan element navbar menggunakan flexbox*/
+    justify-content: space-between;/*memberikan jarak di antara elenen*/
+    align-items: center;/*melaraskan element secara vertikal*/
+    margin: 2rem 5rem;/*memberikan margin di luar element*/
+}
+.email{
+    font-size: 14px;/*mengatur ukuran font*/
+    font-weight: 400;/*mengatur ketebalan pada font*/
+}
+.email:hover{
+    text-shadow: 0 0 10px #0026ff, 0 0 20px #0026ff, 0 0 40px #0026ff
+}
+.social-media{
+    display: flex;/*menggunakan flexbox untuk menyusun element secara horizontal*/
+    align-items: center;/*meluruskan element secara vertikal*/
+    gap: 10px;/*memberikan jarak antar element*/
+}
+.social-media a{
+    text-decoration: none;/*menghapus garis bawah pada link*/
+    color: rgb(248, 244, 244);/*memberikan warna putih*/
+    transition: all 0.3s ease-in-out;/*memberikan efek transisi hover*/
+}
+.social-media a:hover{
+    text-shadow: 0 0 10px #0026ff, 0 0 20px #0026ff, 0 0 40px #0026ff
+}
+hr{
+    border-color: white;/*mengubah warna garis horizontal*/
+    margin: 0 4,5rem;/*mengatur jarak kanan kiri*/
+}
+.hero{
+    display: flex;/*Menjadikan elemen sebagai flex container*/
+    height: 70vh;/*mengatur tinggi viwport*/
+    flex-direction: column;/*menyusun item  secara vertikal*/
+    justify-content: center;/*mengatur elemnt secara vertikal*/
+    align-items: center;/*mengatur element secara horizontal*/
+}
+.avatar{
+    width: 120px;/*mengatur ukuran gambar menjadi 120px*/
+    height: 120px;/*mengatur gambar */
+    border-radius: 50%;/*membuat gambar avatar menjadi lingkaran*/
+    object-fit: cover;/*menyusaikan gambar agar memenuhi ukuran tanpa mengubah proporsinya*/
+    margin-bottom: 16px;/*memberikan jarak gambar bawah */
+}
+.heading{
+    margin-top: 1rem;/*memberikan jarak atas pada heading sebesar 1 rem*/
+    font-size: 38px;/*mengatur font heading */
+    line-height: 40px;/*mengatur tinggi baris*/
+    text-align: center;/*mengatur posisi teks menjadi ke tengah/center*/
+           
+}
+.btn-primary{
+    text-decoration: none;/*menghapus garis bawah pada teks tombol*/
+    background-color: black;/*memberikan warna latar belakang */
+    border: 1px solid white;/*memberikan warna batas tombol berupa garis [putih*/
+    color: #fff;/*mengubah warna teks menjadi warna putih*/
+    color: rgb(243, 243, 245);/*mengubah teks menjadi warna putih*/
+    padding: 1rem 2rem ;/*memberikan runag di dalam tobol */
+    transition: all 0.3 ease-in-out;/*memberikan efek transisi pada perubahan */
+    border-radius: 11px;/*membuat sudut tombol menjadi melengengkung*/
+}
+.btn-primary:hover{
+    background-color: aliceblue;/*mengubah latar belakang */
+    color: black;/*mengubah teks menjadi warma hitam*/
+    border: 1px solid rgb(128, 128, 128);/*mengubah garis batas menjadi abu abu */
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #555;
+    gap: 40px;
+}
+.client h2{
+    color: #000000;
+}
+.client-list .client-logo{
+    width: 130px;
+    height: 95px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+.client-list .client-logo:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.skill{
+    padding: 2rem 5rem;
+    background-color: #000000;
+    border: 1px solid rgb(165, 165, 165);
+}
+.skill h2{
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to right , rgb(139, 139, 139),white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 2rem;
+}
+.skill h6{
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to right , rgb(31, 27, 27),rgb(24, 21, 21));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 2rem;
+}
+.skill-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 40px;   
+}
+.skill-card{
+    background-color: aliceblue;
+    border: 20px solid white;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.skill-image{
+    width: 140px;
+    height: 110px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out; 
+}
+.skill-image:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.skill-name{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.SKILL{
+    padding: 2rem 5rem;
+    background-color: #000000;
+    border: 1px solid rgb(37, 37, 37)
+
+}
+.SKILL h2{
+    font-size: 20px;
+    text-align: center;
+    background: black;
+    color: black;
+    
+}
+.SKILL-List{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 40px;
+}
+.SKILL-card{
+    background-color: #555;
+    border: 1px solid white;
+    border-radius: 1rem ;
+    transition: all 0.3 ease-in-out;
+}
+.skil-image{
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3 ease-in-out;
+}
+.skill-image:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.skill-image:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.skill-name{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: all 0.3 ease-in-out;
+}
+.project{
+    margin: 3rem 5rem;
+}
+.project h2{
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+.project-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.project-card{
+    background-color: #333;
+    border: 1px solid rgb(0, 26, 255);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.project-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.project-name{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.project-card:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(0, 4, 255);
+}
+iframe {
+    width: 300px;  /* Ukuran lebih kecil */
+    height: 225px; /* Sesuai proporsi */ 
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid #fff; /* Opsional: border putih */
+    border-radius: 8px; /* Opsional: sudut melengkung */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Opsional: efek bayangan */
+}
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .location {
+    max-width: 800px;
+    width: 100%;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 10px;
+}
+.kom{
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks */
+    padding: 20px; /* Ruang di dalam footer */
+    text-align: center;
+    
+}
+.kik{
+    font-size: 1.2em; /* Ukuran font untuk judul */
+    margin: 0;
+}
+.tol{
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Ruang antara elemen */
+    align-items: center; /* Vertikal tengah */
+    margin-bottom: 20px;
+}
+.footer-bottom {
+    font-size: 0.9em; /* Ukuran font untuk bagian bawah */
+    border-top: 1px solid #444; /* Garis pemisah atas */
+    padding-top: 10px;
+}
+.footer-bottom a {
+    color: #ffcc00; /* Warna tautan di bagian bawah */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+.footer-bottom a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
